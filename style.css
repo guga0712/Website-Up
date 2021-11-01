@@ -1,6 +1,12 @@
+html{
+    scroll-behavior: smooth;
+}
+
 body, ul{
     margin: 0;
     padding: 0;
+    /* background-color: #080922 */
+    ;
 }
 
 .menu a{
@@ -50,6 +56,11 @@ a:hover{
     display: none;
 }
 
+.teste{
+    font-size: 30px;
+    font-family: sans-serif;
+}
+
 @media (max-width:600px){
 
 
@@ -93,11 +104,11 @@ a:hover{
         gap: .5rem;
     }
 
-    #hamburger{
+    #x{
         border-top: 2px solid ;
         width: 20px;
     }
-    #hamburger::after, #hamburger::before{
+    #x::after, #x::before{
         content: '';
         display: block;
         width: 20px;
@@ -108,16 +119,16 @@ a:hover{
         position: relative;
     }
 
-    #nav.active #hamburger{
+    #nav.active #x{
         border-top-color: transparent;
     
     }
 
-    #nav.active #hamburger::before{
+    #nav.active #x::before{
         transform: rotate(135deg);
     }
 
-    #nav.active #hamburger::after{
+    #nav.active #x::after{
         transform: rotate(-135deg);
         top: -7px;
     }
