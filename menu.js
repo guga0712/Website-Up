@@ -4,7 +4,7 @@ const oqFazemos = document.getElementById('oqFazemos')
 const services = document.getElementById('services')
 
 function toggleMenu(event){
-    if (event.type==='touchstart') event.preventDefau()
+    if (event.type==='touchstart') event.preventDefault()
     const nav = document.getElementById('nav')
     nav.classList.toggle('active')
     const active = nav.classList.contains('active')
