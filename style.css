@@ -135,6 +135,73 @@ main{
     animation: pisca .7s infinite;
 }
 
+.graphs{
+    height: 20vh;
+    width: 100%;
+}
+
+.services{
+    display: flex;
+    justify-content: center;
+    height: 80vh;
+}
+
+.card{
+    margin: 0px 50px;
+    background-color: rgba(255, 255, 255, 0.1);
+    height: 400px;
+    width: 300px;
+    /* border: 1px solid green; */
+    border-radius: 30px;
+    text-align: center;
+    color: white ;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card h1{
+    font-family: 'Noto Sans Mono', monospace;
+    margin: 0;
+    position: absolute;
+    top: 30%;
+    font-size: 20px;
+}
+
+.card p{
+    position: absolute;
+    top: 50%;
+
+
+    overflow: hidden;
+    font-family: 'Noto Sans Mono', monospace;
+    width: 250px;
+    margin: 0;
+    font-size: 15px;
+}
+
+.card img{
+    margin: 0;
+    z-index: 1;
+    height: 200px;
+    transform: translate(0, -50%);
+}
+
+.imgShadow{
+    margin: 0;
+    height: 150px;
+    width: 150px;
+    border-radius: 100%;
+    filter: blur(40px);
+    background-color: #76ecfc;
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    top: 10%;
+    transform: translate(-50%, -50%);
+}
+
 @keyframes pisca {
     0%, 100%{
         opacity: 0;
@@ -282,6 +349,24 @@ main{
         outline: 0;
         transition: 0.5s;
         box-shadow: 0 0 0 4px #00e0b8;
+    }
+
+    .graphs{
+        height: 100vh;
+    }
+
+    .services{
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        align-items: center;
+        height: auto;
+    }
+    
+    .card{
+        margin: 100px 0;
+        height: 500px;
+        width: 300px;
     }
 }
 /* 
