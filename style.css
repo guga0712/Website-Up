@@ -165,42 +165,67 @@ main{
     font-family: 'Noto Sans Mono', monospace;
     margin: 0;
     position: absolute;
-    top: 30%;
-    font-size: 20px;
+    top: 35%;
+    font-size: 15px;
 }
 
 .card p{
     position: absolute;
     top: 50%;
-
-
     overflow: hidden;
     font-family: 'Noto Sans Mono', monospace;
+    font-weight: 300;
     width: 250px;
     margin: 0;
     font-size: 15px;
 }
 
 .card img{
+    position: absolute;
     margin: 0;
-    z-index: 1;
-    height: 200px;
-    transform: translate(0, -50%);
+    height: 180px;
+    transform: translate(0, -30%);
+    transition: 0.5s;
+
+}
+
+.card img:hover{
+    margin-top: -20px;
 }
 
 .imgShadow{
-    margin: 0;
-    height: 150px;
+    height: 400px;
+    width: 300px;
+    overflow: hidden;
+    border-radius: 30px;
+    /* height: 150px;
     width: 150px;
     border-radius: 100%;
-    filter: blur(40px);
     background-color: #76ecfc;
-    position: absolute;
+    /* position: absolute;
     left: 50%;
     right: 50%;
-    top: 10%;
-    transform: translate(-50%, -50%);
+    top: 10%; */
+    /* margin-left: 50%;
+    transform: translate(-50%, 0); */
 }
+
+.imgBlur {
+    /* filter: blur(50px);
+    height: 150px;
+    width: 150px;
+    margin-left: 50%; */
+    filter: blur(20px);
+    -webkit-filter: blur(20px);
+    height: 200px;
+    width: 200px;
+    border-radius: 100%;
+    background-color: #76ecfc5e;
+    margin: auto;
+    transform: translate(0, -35%);
+    z-index: 11;
+}
+
 
 @keyframes pisca {
     0%, 100%{
