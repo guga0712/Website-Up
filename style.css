@@ -64,7 +64,8 @@ header{
     display: block;
     justify-content: center;
     padding: 2.5rem;
-    font-weight: 400;
+    font-weight: 600;
+    font-size: 18px;
 }
 
 .menu a:hover{
@@ -109,8 +110,8 @@ main{
     font-family: 'Montserrat', sans-serif;
     width: auto;
     display: block;
-    margin-left: 10em;
-    margin-top: 10em;
+    margin-top: 80px;
+    margin-left: 20vh;
 }
 
 .mainTitle{
@@ -143,13 +144,13 @@ main{
 .services{
     display: flex;
     justify-content: center;
-    height: 80vh;
+    height: auto;
 }
 
 .card{
-    margin: 0px 50px;
-    background-color: rgba(255, 255, 255, 0.1);
-    height: 400px;
+    margin: 0px 20px;
+    background-color: rgba(255, 255, 255, 0.05);
+    height: 450px;
     width: 300px;
     /* border: 1px solid green; */
     border-radius: 30px;
@@ -161,9 +162,16 @@ main{
     align-items: center;
 }
 
+@media (max-width:1500px){
+    .card{
+        height: 400px;
+        width: 270px;
+    }
+}
+
 .card h1{
-    font-family: 'Noto Sans Mono', monospace;
-    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0 20px;
     position: absolute;
     top: 35%;
     font-size: 15px;
@@ -172,7 +180,6 @@ main{
 .card p{
     position: absolute;
     top: 50%;
-    overflow: hidden;
     font-family: 'Noto Sans Mono', monospace;
     font-weight: 300;
     width: 250px;
@@ -186,6 +193,7 @@ main{
     height: 180px;
     transform: translate(0, -30%);
     transition: 0.5s;
+    z-index: 2;
 
 }
 
@@ -198,7 +206,7 @@ main{
     width: 300px;
     overflow: hidden;
     border-radius: 30px;
-    /* height: 150px;
+        /* height: 150px;
     width: 150px;
     border-radius: 100%;
     background-color: #76ecfc;
@@ -208,6 +216,15 @@ main{
     top: 10%; */
     /* margin-left: 50%;
     transform: translate(-50%, 0); */
+}
+
+@media (max-width:1500px) {
+    .imgShadow{
+        height: 400px;
+        width: 270px;
+        overflow: hidden;
+        border-radius: 30px;
+    }
 }
 
 .imgBlur {
@@ -220,11 +237,12 @@ main{
     height: 200px;
     width: 200px;
     border-radius: 100%;
-    background-color: #76ecfc5e;
+    background-color: #76bbfc5e;
     margin: auto;
     transform: translate(0, -35%);
-    z-index: 11;
+    transition: 0.5s;
 }
+
 
 
 @keyframes pisca {
@@ -265,12 +283,11 @@ main{
     }
 
     .fundoMobile{
-        display: none;
+        display: flex;
         z-index: -2;
         position: absolute;
-        height: 100%;
-        margin-top: 80px;
-        overflow: hidden;
+        margin-top: px;
+        width: 100%;
     }
 
     .fundoBlur{
@@ -366,7 +383,7 @@ main{
     }
 
     .mainTitle{
-        font-size: 50px;
+        font-size: 40px;
         text-align: center;
     }
 
@@ -389,10 +406,17 @@ main{
     }
     
     .card{
-        margin: 100px 0;
-        height: 500px;
-        width: 300px;
+        margin:50px 0;
+        height: 400px;
+        width: 250px;
     }
+
+    .imgShadow{
+        height: 400px;
+        width: 250px;
+    }
+
+
 }
 /* 
 #000000
