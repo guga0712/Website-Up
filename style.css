@@ -147,7 +147,7 @@ main{
 .resultsArea h2{
     color: white;
     font-family: 'Noto Sans Mono', monospace;
-    font-size: 50px;
+    font-size: 40px;
     margin: 0 0 50px 0
 }
 
@@ -366,6 +366,25 @@ main{
 .home a:hover{
     transition: 0.5s;
     box-shadow: 0 0 0 4px #00e0b8;
+}
+
+.containerFooter{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+footer{
+    width: 100%;
+}
+
+footer img{
+    width: 200px;
+}
+
+.socials img{
+    width: 100px;
 }
 
 @media (max-width:600px){
