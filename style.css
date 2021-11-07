@@ -86,7 +86,7 @@ header{
     border-radius: 30px;
     padding: 7px 20px;
     margin: 0;
-    color: white;
+    color: #111129;
     text-decoration: none;
 }
 
@@ -110,7 +110,7 @@ main{
     font-family: 'Montserrat', sans-serif;
     width: auto;
     display: block;
-    margin-top: 80px;
+    margin-top: 50px;
     margin-left: 20vh;
 }
 
@@ -150,28 +150,47 @@ main{
     text-align: center;
     width: 400px;
     font-size: 20px;
-    border-radius: 30px;
-    border-bottom: none;
 }
 
 .investido h3, .faturado h3{
     margin: 20px 0 10px 0;
 }
 
+.investido2, .faturado2{
+    margin: 0 50px;
+    display: flex;
+    position: relative;
+    justify-content: center;
+}
+
+.investido2 img, .faturado2 img{
+    width: 450px;
+}
+
+.investido2 h3, .faturado2 h3{
+    position: absolute;
+    margin-top: 10%;
+}
+
+.value{
+    position: absolute;
+    margin-top: 20%;
+}
+
 .investido{
-    border:double 3px transparent ;
+    /* border:double 3px transparent ;
     border-image:     
     linear-gradient(#00e0b8, rgba(0, 0, 0, 0))100% 0;
-    border-image-slice: 1;
+    border-image-slice: 1; */
     color: #00e0b8;
 }
 
 .faturado{
     color: #c600e0;
-    border:double 3px transparent ;
+    /* border:double 3px transparent ;
     border-image:     
     linear-gradient(#c600e0, rgba(0, 0, 0, 0))100% 0;
-    border-image-slice: 1;
+    border-image-slice: 1; */
 }
 
 .value{
@@ -188,7 +207,7 @@ main{
     width: 100%;
     display: flex;
     justify-content: center;
-    margin: 50px 0 100px 0;
+    margin: 0px 0 100px 0;
     z-index: 1;
 }
 
@@ -481,7 +500,7 @@ main{
     .results{
         display: flex;
         flex-direction: column;
-        margin: 100px 0;
+        margin: 0px 0;
         align-items: center;
     }
 
@@ -497,6 +516,13 @@ main{
     .value{
         font-size: 40px;
         font-weight: bold;
+    }
+
+    .investido2, .faturado2{
+        margin-bottom: 50px;
+    }
+    .investido2 img, .faturado2 img{
+        width: 350px;
     }
 
 
