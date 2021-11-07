@@ -16,7 +16,7 @@ body, ul{
 
 .fundo{ 
     position: absolute;
-    z-index: -1;
+    z-index: -100;
     width: 100%;
     top: 0%;
 }
@@ -137,19 +137,29 @@ main{
 }
 
 .graphs{
-    height: 20vh;
+    height: auto;
     width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 50px 0 100px 0;
+    z-index: 1;
 }
 
-.services{
+.graphs img{
+    height: 400px;
+    width: auto;
+}
+
+.services, .services2{
     display: flex;
     justify-content: center;
     height: auto;
+    margin-bottom: 50px;
 }
 
 .card{
     margin: 0px 20px;
-    background-color: rgba(255, 255, 255, 0.05);
+    background-color: rgba(29,29,52,255);
     height: 450px;
     width: 300px;
     /* border: 1px solid green; */
@@ -194,8 +204,9 @@ main{
     transform: translate(0, -30%);
     transition: 0.5s;
     z-index: 2;
-
 }
+
+
 
 .card img:hover{
     margin-top: -20px;
@@ -394,10 +405,10 @@ main{
     }
 
     .graphs{
-        height: 100vh;
+        height: auto;
     }
 
-    .services{
+    .services, .services2{
         display: flex;
         flex-direction: column;
         margin: 0;
@@ -406,15 +417,20 @@ main{
     }
     
     .card{
-        margin:50px 0;
+        margin: 40px 0;
         height: 400px;
         width: 250px;
     }
 
     .imgShadow{
-        height: 400px;
+        height: 300px;
         width: 250px;
     }
+
+    .imgBlur{
+        width: 150px;
+    }
+
 
 
 }
