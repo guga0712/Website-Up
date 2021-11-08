@@ -71,7 +71,6 @@ header{
 .menu a:hover{
     transition: 0.5s;
     color: #00e0b8;
-    box-shadow: 1px;
 }
 
 .botaoHeader{
@@ -92,8 +91,11 @@ header{
 }
 
 .botaoHeader a:hover{
-    background-color: #27977d;
     transition: 0.5s;
+    /* box-shadow: #00e0b74f 0px 5px 15px; */
+    /* box-shadow: #00e0b7a8 0px 0px 40px 10px; */
+    /* box-shadow: #00e0b794 0px 22px 70px 4px; */
+    box-shadow: #00e0b794 0px 10px 30px 10px;
 }
 
 
@@ -369,6 +371,60 @@ main{
     box-shadow: 0 0 0 4px #00e0b8;
 }
 
+.contactUs{
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.contactUsText{
+    width:40%;
+    color: white;
+}
+
+.contactUsText a{
+    text-decoration: none;
+    color:#767676
+}
+
+.contactUsText h2{
+    font-size: 50px;
+}
+
+.contacts{
+    font-family: 'Noto Sans Mono', monospace;
+    color:#767676
+}
+
+.contactUsText p{
+    width: 45%;
+    font-size: 15px;
+    
+}
+
+.doubt{
+    margin-bottom: 40px;
+}
+
+form{
+    background-color: rgba(29,29,52,255);
+    border-radius: 30px;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+form input{
+    width: 80%;
+    margin: 20px 0;
+}
+
+.submitBotao{
+    width: 50%;
+}
 
 footer{
     width: 100%;
@@ -419,6 +475,7 @@ footer p{
     display: flex;
     align-items: center;
 }
+
 
 @media (max-width:600px){
 
