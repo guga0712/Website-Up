@@ -21,7 +21,7 @@ body, ul{
     top: 0%;
 }
 
-.fundoMobile{display: none;}
+.fundoMobile, #contactUs{display: none;}
 
 .fundoBlur{
     position: absolute;
@@ -71,6 +71,7 @@ header{
 .menu a:hover{
     transition: 0.5s;
     color: #00e0b8;
+    box-shadow: 1px;
 }
 
 .botaoHeader{
@@ -404,6 +405,21 @@ footer p{
     margin-left: 30px;
 }
 
+.divider{
+    width: 80%;
+    height: 1px;
+    background-color: #767676;
+    position: absolute;
+    top: 0;
+    left: 10%;
+}
+
+.footerContent{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+}
+
 @media (max-width:600px){
 
     .fundo{
@@ -461,6 +477,7 @@ footer p{
         padding: 1rem 0;
         margin: 20px 20px;
         font-weight: 500;
+        border-bottom: 1px solid #767676;
     }
 
     #btn-mobile{
@@ -504,15 +521,30 @@ footer p{
     }
 
     .home{
-        display: block;
+        display: flex;
+        flex-direction: column;
         height: 100%;
         margin: 0;
         text-align: center;
+        align-items: center;
+
     }
 
     .mainTitle{
-        font-size: 40px;
+        font-size: 50px;
         text-align: center;
+        width:100%;
+        height: 100px;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+
+    .subtitle{
+        text-align: center;
+        font-size: 35px;
+        width: max-content;
+        letter-spacing: 0px;
+        margin: 0px 50% 40px 50%;
     }
 
     .home a:active{
@@ -553,6 +585,7 @@ footer p{
         flex-direction: column;
         margin: 0px 0;
         align-items: center;
+        justify-content: center;
     }
 
     .investido, .faturado{
@@ -571,12 +604,27 @@ footer p{
 
     .investido2, .faturado2{
         margin-bottom: 50px;
+        margin-left: 0;
+        margin-right: 0;
     }
     .investido2 img, .faturado2 img{
         width: 350px;
     }
 
+    footer p{
+        font-size: 10px;
+        width: 70px;
+        text-align: center;
+    }
 
+    .logoFooter{
+        width: 60px;
+    }
+    
+    .socials img{
+        width: 20px;
+        margin-left: 10px;
+    }
 }
 /* 
 #000000
