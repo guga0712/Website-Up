@@ -15,9 +15,11 @@
     <link rel="stylesheet" href="./style.css">
     <title>Up Agency.</title>
 </head>
+
 <body>
     <img src="./assets/transparente back.png" alt="" class="fundo">
-    <div class="fundoBlur"></div>
+    <div class="circuloBlur"></div>
+    <div class="circuloBlur2"></div>
     <header>
         <a href="#"><img src="./assets/logoSvgBranco.svg" class="logoHeader" alt=""></a>
         <nav class="nav" id="nav">
@@ -25,10 +27,10 @@
                 <span id="x"></span>
             </button>
             <ul class="menu">
-                <li><a href="#teste1" id="quemSomos">Quem somos</a></li>
-                <li><a href="#teste1" id="oqFazemos">O que fazemos</a></li>
-                <li><a href="#services" id="serviços">Serviços</a></li>
-                <li><a href="#contactUs" id="contactUs">Fale conosco</a></li>
+                <li><a href="#teste1" id="quemSomosButton">Quem somos</a></li>
+                <li><a href="#teste1" id="oqFazemosButton">O que fazemos</a></li>
+                <li><a href="#services" id="serviçosButton">Serviços</a></li>
+                <li><a href="#contactUs" id="contactUsButton">Fale conosco</a></li>
             </ul>
         </nav>
         <div class="botaoHeader">
@@ -44,7 +46,7 @@
         </div>
         <div class="graphs">
             <!-- <img src="assets/GRAFICO RESULTADO.png" alt=""> -->
- 
+
         </div>
         <div class="resultsArea">
             <h2>Em 2020, nós:</h2>
@@ -62,29 +64,29 @@
                         R$
                         <div class="counter" data-target="15000000">0</div>
                     </div> -->
-    
-                    <!-- ******************TESTE******************** -->
-                    <div class="investido2">
-                        <img src="./assets/teste.png" alt="">
-                        <h3>Investido</h3>
-                        <div class="value">
-                            R$
-                            <div class="counter" data-target="1600000">0</div>
-                        </div>
+
+                <!-- ******************TESTE******************** -->
+                <div class="investido2">
+                    <img src="./assets/teste.png" alt="">
+                    <h3>Investido</h3>
+                    <div class="value">
+                        R$
+                        <div class="counter" data-target="1600000">0</div>
                     </div>
-                    <div class="faturado2">
-                        <img src="./assets/teste2.png" alt="">
-                        <h3>Faturado</h3>
-                        <div class="value">
-                            R$
-                            <div class="counter" data-target="15000000">0</div>
-                        </div>
-                    </div>
-                    <!-- ******************TESTE******************** -->
                 </div>
+                <div class="faturado2">
+                    <img src="./assets/teste2.png" alt="">
+                    <h3>Faturado</h3>
+                    <div class="value">
+                        R$
+                        <div class="counter" data-target="15000000">0</div>
+                    </div>
+                </div>
+                <!-- ******************TESTE******************** -->
             </div>
         </div>
-       
+        </div>
+
         <div class="services">
             <div class="card">
                 <div class="imgShadow">
@@ -165,14 +167,16 @@
         <div class="contactUs">
             <div class="contactUsText">
                 <h2>Fale conosco</h2>
-                <p class="doubt">Nossa equipe está pronta para te ajudar e tirar suas dúvidas sobre serviços e orçamentos. Não perca tempo e mude o rumo do seu negócio.</p>
-                <p class="contacts">Tel.: <a href="tel:+5511935895874">(11) 93589-5874</a></p>
-                <p class="contacts">E-mail: <a href="mailto:upagency.oficial@gmail.com">upagency.oficial@gmail.com</a></p>
+                <p class="doubt">Nossa equipe está pronta para te ajudar e tirar suas dúvidas sobre serviços e
+                    orçamentos. Não perca tempo e mude o rumo do seu negócio.</p>
+                <p class="contacts">Tel.: <a href="tel:+5511935895874">(11) 9 3589-5874</a></p>
+                <p class="contacts">E-mail: <a href="mailto:upagency.oficial@gmail.com">upagency.oficial@gmail.com</a>
+                </p>
             </div>
             <form action="" class="formContactUs">
-                <input type="text" name="Nome:" placeholder="Nome" id="">
-                <input type="email" name="Email:" placeholder="Email" id="">
-                <input type="tel" name="Tel.:" placeholder="Telefone" id="">
+                <input type="text" name="Nome:" placeholder="Digite seu nome..." id="">
+                <input type="email" name="Email:" placeholder="Digite seu email..." id="">
+                <input type="tel" name="Tel.:" placeholder="Digite seu telefone..." id="">
                 <input type="submit" value="Orçamento" class="submitBotao">
             </form>
         </div>
@@ -192,4 +196,5 @@
     <script src="./typing.js"></script>
     <script src="./counter.js"></script>
 </body>
+
 </html>
