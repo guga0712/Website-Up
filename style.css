@@ -158,6 +158,7 @@ main{
     justify-content: center;
     align-items: center;
     margin: 0;
+    height: auto;
 }
 
 .resultsArea h2{
@@ -170,7 +171,7 @@ main{
 .results{
     font-family: 'Montserrat', sans-serif;
     display: flex;
-    margin: 0 0 100px 0;
+    margin: 0 0 40px 0;
     justify-content: center;
     height: auto;
     color: white;
@@ -238,13 +239,82 @@ main{
     width: 100%;
     display: flex;
     justify-content: center;
-    margin: 0px 0 100px 0;
+    margin: 0px 0 40px 0;
     z-index: 1;
 }
 
-.graphs img{
-    height: 400px;
-    width: auto;
+.aboutUs{
+    height: auto;
+    width: 100%;
+    margin: 40px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.aboutUs h2{
+    color: white;
+    font-family: 'Noto Sans Mono', monospace;
+    font-weight: 600;
+    width: 300px;
+    text-align: center;
+    font-size: 30px;
+    margin: 0 0 30px 0;
+}
+
+
+.contentAboutUs{
+    display: flex;
+    width: 60%;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.imgGradient img{
+  height: 300px;
+}
+
+.textAboutUs{
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.textAboutUs h1{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 60px;
+    font-weight: 900;
+    margin: 0;
+}
+
+.textAboutUs p{
+    margin: 0;
+    font-size: 20px;
+    width: 500px;
+}
+
+@media (max-width:1500px){
+    .contentAboutUs{
+        display: flex;
+        width: 80%;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 0px;
+    }
+
+    .textAboutUs{
+        margin: 0;
+    }
+
+    .imgGradient img{
+        margin: 0;
+    }
+
+    .textAboutUs p{
+        margin: 0;
+        width: 400px;
+    }
+
+    
 }
 
 .services, .services2{
@@ -403,7 +473,7 @@ main{
 }
 
 .contactUsText h2{
-    font-size: 50px;
+    font-size: 60px;
     font-weight: 900;
 }
 
@@ -655,16 +725,18 @@ footer p{
         box-shadow: 0 0 0 4px #00e0b8;
     }
 
-    .graphs{
-        height: auto;
-    }
-
     .services, .services2{
         display: flex;
         flex-direction: column;
         margin: 0;
         align-items: center;
         height: auto;
+    }
+
+    .contentAboutUs{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
     }
     
     .card{
