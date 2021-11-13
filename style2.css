@@ -94,12 +94,6 @@ body, ul{
     flex-direction: column;
 }
 
-@media (max-width:1500px){
-    .s2Content{
-        margin-top: 10vh;
-    }
-}
-
 .mainTitle{
     margin: 0;
     margin-bottom: 40px;
@@ -177,12 +171,6 @@ body, ul{
     border: 1px solid green;
 }
 
-@media (max-width:1500px) {
-    .s3Content{
-        margin-top: 10vh;
-    }
-}
-
 .s3Content h2{
     color: white;
     font-family: 'Noto Sans Mono', monospace;
@@ -215,22 +203,10 @@ body, ul{
     width: 450px;
 }
 
-@media (max-width:1500px){
-    .investido2 img, .faturado2 img{
-        width: 300px;
-    }
-}
-
-
 .investido2 h3, .faturado2 h3{
     position: absolute;
     margin-top: 10%;
     font-size: 30px;
-}
-@media (max-width:1500px){
-    .investido2 h3, .faturado2 h3{
-        font-size: 18px;
-    }
 }
 
 .value{
@@ -248,9 +224,38 @@ body, ul{
     font-weight: bold;
 }
 
+
+
+
+
 @media (max-width:1500px){
+
+    .s1Content, .s2Content, .s3Content{
+        width: 90%;
+    }
+
+    .s2Content{
+        margin-top: 10vh;
+    }
+
+    .s3Content{
+        margin-top: 40vh;
+    }
+
+    .mainTitle, .subtitle, .s2Content p{
+        margin-bottom: 20px
+    }
+
+    .investido2 img, .faturado2 img{
+        width: 300px;
+    }
+
     .value{
         font-size: 35px;
+    }
+
+    .investido2 h3, .faturado2 h3{
+        font-size: 18px;
     }
 }
 
