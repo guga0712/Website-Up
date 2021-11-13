@@ -44,7 +44,7 @@ body, ul{
     height: 40px;
 }
 
-.s1, .s2{
+.s1, .s2,.s3{
     width: 100%;
     display: flex;
     justify-content: center;
@@ -85,6 +85,7 @@ body, ul{
 
 
 .s2Content{
+    margin-top: 20vh;
     color: white;
     font-family: 'Montserrat', sans-serif;
     display: flex;
@@ -93,8 +94,15 @@ body, ul{
     flex-direction: column;
 }
 
+@media (max-width:1500px){
+    .s2Content{
+        margin-top: 10vh;
+    }
+}
+
 .mainTitle{
-    margin: 160px 0 40px 0;
+    margin: 0;
+    margin-bottom: 40px;
     width: 30px;
     height: 180px;
     font-family: 'Montserrat', sans-serif;
@@ -102,6 +110,7 @@ body, ul{
     font-weight: 700;
     letter-spacing: 0px;
 }
+
 .mainTitle h1{
     margin: 0;
 }
@@ -158,6 +167,94 @@ body, ul{
     box-shadow: 0 0 0 4px #00e0b8;
 }
 
+.s3Content{
+    margin-top: 20vh;
+    width: 60%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid green;
+}
+
+@media (max-width:1500px) {
+    .s3Content{
+        margin-top: 10vh;
+    }
+}
+
+.s3Content h2{
+    color: white;
+    font-family: 'Noto Sans Mono', monospace;
+    font-size: 30px;
+}
+
+
+.results{
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    margin: 0 0 40px 0;
+    justify-content: center;
+    height: auto;
+    color: white;
+}
+
+.investido h3, .faturado h3{
+    margin: 20px 0 10px 0;
+    
+}
+
+.investido2, .faturado2{
+    margin: 0 50px;
+    display: flex;
+    position: relative;
+    justify-content: center;
+}
+
+.investido2 img, .faturado2 img{
+    width: 450px;
+}
+
+@media (max-width:1500px){
+    .investido2 img, .faturado2 img{
+        width: 300px;
+    }
+}
+
+
+.investido2 h3, .faturado2 h3{
+    position: absolute;
+    margin-top: 10%;
+    font-size: 30px;
+}
+@media (max-width:1500px){
+    .investido2 h3, .faturado2 h3{
+        font-size: 18px;
+    }
+}
+
+.value{
+    position: absolute;
+    margin-top: 20%;
+}
+
+
+.value{
+    color: white;
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    padding: 20px;
+    font-weight: bold;
+}
+
+@media (max-width:1500px){
+    .value{
+        font-size: 35px;
+    }
+}
+
+
 
 
 
@@ -193,7 +290,7 @@ body, ul{
         display: block;
     }
 
-    .s1{
+    .s1, .s3{
         width: 100%;
     }
 
@@ -276,9 +373,9 @@ body, ul{
     }
 
     .s2Content{
+        margin-top: 150px;
         display: flex;
         flex-direction: column;
-        margin: 0;
         height: auto;
         width: 100%;
         margin-left: 20px;
@@ -289,9 +386,6 @@ body, ul{
         width: 100px;
         font-weight: 700;
         height: 100px;
-        margin-top: 100px;
-        margin-bottom: 20px;
-        
     }
 
     .subtitle{
@@ -362,6 +456,14 @@ body, ul{
         width: 150px;
     }
 
+    .s3Content{
+        margin-top: 150px;
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        width: 100%;
+    }
+
     .results{
         display: flex;
         flex-direction: column;
@@ -370,13 +472,8 @@ body, ul{
         justify-content: center;
     }
 
-    .investido h3, .faturado h3{
-        margin: 20px 0 0 0;
-        font-size: 20px;
-    }
-
     .value{
-        font-size: 40px;
+        font-size: 30px;
         font-weight: bold;
     }
 
@@ -391,7 +488,7 @@ body, ul{
     }
 
     .investido2 img, .faturado2 img{
-        width: 350px;
+        width: 300px;
     }
 
     .contactUs{
