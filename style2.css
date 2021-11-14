@@ -14,9 +14,9 @@ body, ul{
 
 .focus{
     position: fixed;
-    background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.5) 100%);
+    background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.8) 100%);
     width: 100%;
-    height: 35%;
+    height: 25%;
     bottom: 0;
     z-index: 200;
 }
@@ -71,7 +71,7 @@ body, ul{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    /* border: 1px solid green; */
+    border: 1px solid green;
 }
 
 .menu{
@@ -104,7 +104,7 @@ body, ul{
     font-family: 'Montserrat', sans-serif;
     display: flex;
     width: 60%;
-    /* border: 1px solid green; */
+    border: 1px solid green;
     flex-direction: column;
 }
 
@@ -115,7 +115,7 @@ body, ul{
     height: 180px;
     font-family: 'Montserrat', sans-serif;
     font-size: 80px;
-    font-weight: 700;
+    font-weight: 600;
     letter-spacing: 0px;
 }
 
@@ -151,7 +151,7 @@ body, ul{
 
 .s2Content p{
     width: 50%;
-    color: #949494;
+    color: #c4c4c4;
     margin-bottom: 40px;
     margin-top: 0;
     font-size: 20px;
@@ -182,10 +182,11 @@ body, ul{
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* border: 1px solid green; */
+    border: 1px solid green;
 }
 
 .s3Content h2{
+    font-weight: 600;
     color: white;
     font-family: 'Noto Sans Mono', monospace;
     font-size: 30px;
@@ -221,6 +222,7 @@ body, ul{
     position: absolute;
     margin-top: 10%;
     font-size: 30px;
+    font-weight: 300;
 }
 
 .value{
@@ -245,7 +247,7 @@ body, ul{
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* border: 1px solid green; */
+    border: 1px solid green;
 }
 
 .s4Content h2{
@@ -281,7 +283,7 @@ body, ul{
 .textAboutUs h1{
     font-family: 'Montserrat', sans-serif;
     font-size: 60px;
-    font-weight: 700;
+    font-weight: 600;
     margin: 0 0 30px 0;
 }
 
@@ -312,7 +314,7 @@ body, ul{
     display: flex;
     height: auto;
     margin-bottom: 80px;
-    /* border: 1px solid green; */
+    border: 1px solid green;
 }
 
 .s5Content2{
@@ -338,7 +340,7 @@ body, ul{
     margin: 0 20px;
     position: absolute;
     top: 45%;
-    font-size: 15px;
+    font-size: 17px;
 }
 
 .card p{
@@ -346,7 +348,7 @@ body, ul{
     top: 60%;
     font-family: 'Noto Sans Mono', monospace;
     font-weight: 300;
-    width: 250px;
+    width: 300px;
     margin: 0;
     font-size: 15px;
 }
@@ -388,7 +390,12 @@ body, ul{
 }
 
 
-
+@media (max-width: 2000px) {
+    .s1Content, .s2Content, .s3Content, .s4Content, .s5container{
+        width: 80%;
+    }
+    
+}
 
 @media (max-width:1500px){
 
@@ -413,7 +420,7 @@ body, ul{
     }
 
     .value{
-        font-size: 40px;
+        font-size: 35px;
     }
 
     .investido2 h3, .faturado2 h3{
@@ -456,11 +463,13 @@ body, ul{
 
     .card h1{
         top: 40%;
+        font-size: 15px;
     }
 
     .card p{
         font-size: 13px;
         top: 65%;
+        width: 240px;
     }
 
     .imgShadow{
@@ -510,6 +519,27 @@ body, ul{
         margin: 40px 0;
         height: 400px;
         width: 400px;
+    }
+
+    .card img{
+        height: 160px;
+    }
+
+    .card h1{
+        font-size: 20px;
+    }
+
+    .card p{
+        font-size: 18px;
+        width: 300px;
+    }
+
+    .imgShadow{
+        width: 400px;
+    }
+
+    .imgBlur{
+        width: 300px;
     }
 
 }
@@ -721,13 +751,26 @@ body, ul{
         width: 300px;
     }
 
+    .card img{
+        height: 180px;
+    }
+
+    .card h1{
+        top: 45%;
+        font-size: 15px;
+    }
+
+    .card p{
+        font-size: 14px;
+    }
+
     .imgShadow{
-        height: 250px;
-        width: 250px;
+        height: 300px;
+        width: 300px;
     }
 
     .imgBlur{
-        width: 150px;
+        width: 200px;
     }
 
     .s3Content, .s4Content{
