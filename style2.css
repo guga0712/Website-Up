@@ -247,15 +247,15 @@ body, ul{
     }
 
     .investido2 img, .faturado2 img{
-        width: 300px;
+        width: 400px;
     }
 
     .value{
-        font-size: 35px;
+        font-size: 40px;
     }
 
     .investido2 h3, .faturado2 h3{
-        font-size: 18px;
+        font-size: 20px;
     }
 }
 
