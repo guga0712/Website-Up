@@ -306,7 +306,7 @@ body, ul{
 }
 
 .s6 h2{
-    margin-bottom: 0;
+    margin-bottom: -30px;
 }
 
 .s5container{
@@ -570,8 +570,8 @@ form input::placeholder{
         margin-top: 10vh;
     }
 
-    .s3Content, .s4Content{
-        margin-top: 30vh;
+    .s3Content, .s4Content, .s5 h2, .s6 h2, .s7Content, .s8Content{
+        margin-top: 20vh;
     }
 
     .mainTitle, .subtitle, .s2Content p{
