@@ -110,11 +110,11 @@ body, ul{
 
 .mainTitle{
     margin: 0;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     width: 30px;
     height: 180px;
     font-family: 'Montserrat', sans-serif;
-    font-size: 80px;
+    font-size: 70px;
     font-weight: 600;
     letter-spacing: 0px;
 }
@@ -133,11 +133,11 @@ body, ul{
 }
 
 .subtitle{
-    font-size: 30px;
+    font-size: 25px;
     margin: 0;
     font-weight: 300;
     letter-spacing: 20px;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 
 @keyframes pisca {
@@ -152,9 +152,9 @@ body, ul{
 .s2Content p{
     width: 50%;
     color: #c4c4c4;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     margin-top: 0;
-    font-size: 20px;
+    font-size: 17px;
 }
 
 .botaoHome{
@@ -189,7 +189,7 @@ body, ul{
     font-weight: 600;
     color: white;
     font-family: 'Noto Sans Mono', monospace;
-    font-size: 30px;
+    font-size: 25px;
 }
 
 
@@ -202,11 +202,6 @@ body, ul{
     color: white;
 }
 
-.investido h3, .faturado h3{
-    margin: 20px 0 10px 0;
-    
-}
-
 .investido2, .faturado2{
     margin: 0 50px;
     display: flex;
@@ -215,13 +210,13 @@ body, ul{
 }
 
 .investido2 img, .faturado2 img{
-    width: 450px;
+    width: 400px;
 }
 
 .investido2 h3, .faturado2 h3{
     position: absolute;
     margin-top: 10%;
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 300;
 }
 
@@ -235,7 +230,7 @@ body, ul{
     color: white;
     display: flex;
     justify-content: center;
-    font-size: 50px;
+    font-size: 40px;
     padding: 20px;
     font-weight: bold;
 }
@@ -255,7 +250,7 @@ body, ul{
     font-family: 'Noto Sans Mono', monospace;
     font-weight: 600;
     text-align: center;
-    font-size: 30px;
+    font-size: 25px;
     margin: 0 0 30px 0;
 }
 
@@ -282,14 +277,14 @@ body, ul{
 
 .textAboutUs h1{
     font-family: 'Montserrat', sans-serif;
-    font-size: 60px;
+    font-size: 50px;
     font-weight: 600;
     margin: 0 0 30px 0;
 }
 
 .textAboutUs p{
     margin: 0;
-    font-size: 20px;
+    font-size: 17px;
     width: 800px;
     line-height: 30px;
 }
@@ -302,11 +297,12 @@ body, ul{
     font-family: 'Noto Sans Mono', monospace;
     font-weight: 600;
     text-align: center;
-    font-size: 30px;
+    font-size: 25px;
 }
 
 .s6 h2{
-    margin-bottom: -50px;
+    margin-bottom: -80px;
+    z-index: 3000;
 }
 
 .s5container{
@@ -351,7 +347,7 @@ body, ul{
     top: 60%;
     font-family: 'Noto Sans Mono', monospace;
     font-weight: 300;
-    width: 300px;
+    width: 250px;
     margin: 0;
     font-size: 15px;
 }
@@ -425,7 +421,7 @@ body, ul{
 }
 
 .contactUsText h2{
-    font-size: 60px;
+    font-size: 50px;
     font-weight: 600;
     margin: 20px 0;
 }
@@ -736,7 +732,6 @@ form input::placeholder{
 
 
 @media (max-width:768px){
-
     .fundo{
         display: none;
     }
