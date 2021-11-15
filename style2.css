@@ -474,7 +474,6 @@ form input{
 form input:focus{
     border:none;	
     outline:none;
-    background-image: linear-gradient(-120deg, #d859ff 0%, #8f66ff 50%, #00e0b8 75%);
 
 }
 
@@ -1047,6 +1046,11 @@ form input::placeholder{
     
     form input{
         width: 200px;
+        font-size: 13px;
+    }
+    
+    form input::placeholder{
+        font-size: 13px;
     }
 
     .submitBotao{
