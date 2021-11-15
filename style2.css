@@ -571,7 +571,7 @@ form input::placeholder{
     }
 
     .s3Content, .s4Content{
-        margin-top: 40vh;
+        margin-top: 30vh;
     }
 
     .mainTitle, .subtitle, .s2Content p{
@@ -851,6 +851,10 @@ form input::placeholder{
 
     .s2Content, .s3Content, .s4Content{
         margin: 0 20px;
+    }
+
+    .s3Content{
+        margin-top: 20vh;
     }
 
     .s2Content{
