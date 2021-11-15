@@ -326,10 +326,9 @@ body, ul{
 }
 
 .card{
-    background-color: rgba(29,29,52,255);
+    background-color: #11112b;
     height: 350px;
     width: 350px;
-    /* border: 1px solid green; */
     border-radius: 30px;
     text-align: center;
     color: white ;
@@ -504,7 +503,6 @@ form input::placeholder{
 
 .submitBotao:hover{
     box-shadow: 0 0 0 4px #00e0b8;
-    background-color: #00e0b715;
 }
 
 
