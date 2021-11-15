@@ -53,14 +53,14 @@ body, ul{
     height: 40px;
 }
 
-.s1, .s2,.s3, .s4, .s5{
+.s1, .s2,.s3, .s4, .s5, .s6, .s7, .s8{
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.s5{
+.s5, .s6{ 
     flex-direction: column;
 }
 
@@ -295,7 +295,7 @@ body, ul{
 }
 
 
-.s5 h2{
+.s5 h2, .s6 h2{
     margin-top: 30vh;
     margin-bottom: 60px;
     color: white;
@@ -389,17 +389,158 @@ body, ul{
     transition: 0.5s;
 }
 
+.s6Content{
+    display: grid;
+    border: 1px solid green;
+    width: 60%;
+    grid-template-columns: auto auto auto;
+    justify-content: space-between;
+}
+
+.s6Content img{
+    width: 300px;
+}
+
+.s7Content, .s8Content{
+    margin-top: 30vh;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    width: 60%;
+    justify-content: space-between;
+    border: 1px solid green;
+    align-items: center;
+}
+
+.contactUsText{
+    width: 35%;
+    color: white;
+}
+
+.contactUsText a{
+    text-decoration: none;
+    color:#767676
+}
+
+.contactUsText h2{
+    font-size: 60px;
+    font-weight: 600;
+    margin: 20px 0;
+}
+
+.contacts{
+    font-family: 'Noto Sans Mono', monospace;
+    color:#767676
+}
+
+.contactUsText p{
+    font-size: 17px;
+}
+
+.doubt{
+    margin-bottom: 40px;
+}
+
+form{
+    background-color: rgba(29,29,52,255);
+    border-radius: 30px;
+    width: 600px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+}
+
+form input{
+    margin: 10px 0 20px 0;
+    height: 45px;
+    width: 400px;
+    border-radius: 15px;
+    border: 0;
+    padding: 0 20px;
+    color: #ffffff;
+    background-image: linear-gradient(120deg, #d469f5 0%, #8f66ff 50%, #00e0b8 75%);
+    font-family: 'Noto Sans Mono', monospace;
+}
+
+form input:focus{
+    border:none;	
+    outline:none;
+}
+
+form input::placeholder{
+    font-family: 'Noto Sans Mono', monospace;
+    color: #d1d1d1;
+    font-weight: 400;
+    font-size: 15px;
+
+}
+
+.submitBotao{
+    background-color: #00e0b8;
+    background-image: none;
+    width: 300px;
+}
+
+
+.s8Content{
+    width: 60%;
+    height: auto;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 400
+}
+
+.s8Content p{
+    color: #767676;
+    font-family: 'Noto Sans Mono', monospace;
+    font-size: 20px;
+}
+
+.logoFooter{
+    width: 80px;
+}
+
+.socials img{
+    width: 30px;
+    margin-left: 30px;
+}
+
+.footerContent{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+
+
+
 
 @media (max-width: 2000px) {
-    .s1Content, .s2Content, .s3Content, .s4Content, .s5container{
+    .s1Content, .s2Content, .s3Content, .s4Content, .s5container, .s6Content, .s7Content, .s8Content{
         width: 80%;
     }
     
 }
 
+@media (max-width:1800px) {
+    .card{
+        height: 300px;
+        width: 300px;
+    }
+
+    .imgShadow{
+        width: 300px;
+    }
+}
+
 @media (max-width:1500px){
 
-    .s1Content, .s2Content, .s3Content, .s4Content, .s5container{
+    .s1Content, .s2Content, .s3Content, .s4Content, .s5container, .s6Content, .s7Content, .s8Content{
         width: 90%;
     }
 
@@ -476,6 +617,10 @@ body, ul{
         width: 250px;
     }
 
+    .s6Content img{
+        width: 250px;
+    }
+
       
 }
 
@@ -542,6 +687,26 @@ body, ul{
         width: 300px;
     }
 
+    .s6Content{
+        grid-template-columns: auto auto auto;
+        justify-content: space-between;
+    }
+
+    .s6Content img{
+        width: 200px;
+    }
+
+    .contactUsText h2{
+        font-size: 40px;
+    }
+
+    form{
+        width: 500px;
+    }
+
+    form input{
+        width: 350px;
+    }
 }
 
 
@@ -812,12 +977,12 @@ body, ul{
         width: 300px;
     }
 
-    .contactUs{
+    .s7Content{
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        width: 100%;
-        margin:0;
+        margin-top: 150px;
+        width: calc(100% - 40px);
     }
 
     .contactUsText h2{
@@ -837,12 +1002,32 @@ body, ul{
 
     .contactUsText p{
         text-align: center;
-        width: 300px;
+        width: 100%;
+    }
+
+
+    .s6Content{
+        grid-template-columns: auto auto;
+        justify-content: space-between;
+        width: calc(100% - 40px);
+    }
+
+    .s6Content img{
+        width: 130px;
     }
 
     form{
-        width: 80%;
-        margin: 0 0 40px 0;
+        width: 90%;
+        padding: 30px 0;
+        margin-top: 40px;
+    }
+    
+    form input{
+        width: 200px;
+    }
+
+    .submitBotao{
+        width: 200px;
     }
 
     .contacts{
@@ -855,20 +1040,25 @@ body, ul{
         margin: 20px 0;
     }
 
+    .s8Content{
+        margin-top: 40px;
+        width: calc(100% - 40px);
+    }
 
-    footer p{
-        font-size: 15px;
-        width: 100px;
+    .s8Content p{
+        font-size: 10px;
+        width: 60px;
         text-align: center;
     }
 
     .logoFooter{
         width: 60px;
     }
+
     
     .socials img{
-        width: 40px;
-        margin-left: 10px;
+        width: 20px;
+        margin: 0;
     }
 }
 /* 
