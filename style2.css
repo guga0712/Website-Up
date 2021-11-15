@@ -71,7 +71,7 @@ body, ul{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border: 1px solid green;
+    /* border: 1px solid green; */
 }
 
 .menu{
@@ -104,7 +104,7 @@ body, ul{
     font-family: 'Montserrat', sans-serif;
     display: flex;
     width: 60%;
-    border: 1px solid green;
+    /* border: 1px solid green; */
     flex-direction: column;
 }
 
@@ -182,7 +182,7 @@ body, ul{
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 1px solid green;
+    /* border: 1px solid green; */
 }
 
 .s3Content h2{
@@ -247,7 +247,7 @@ body, ul{
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 1px solid green;
+    /* border: 1px solid green; */
 }
 
 .s4Content h2{
@@ -305,6 +305,10 @@ body, ul{
     font-size: 30px;
 }
 
+.s6 h2{
+    margin-bottom: 0;
+}
+
 .s5container{
     width: 60%;
 }
@@ -314,7 +318,7 @@ body, ul{
     display: flex;
     height: auto;
     margin-bottom: 80px;
-    border: 1px solid green;
+    /* border: 1px solid green; */
 }
 
 .s5Content2{
@@ -391,7 +395,7 @@ body, ul{
 
 .s6Content{
     display: grid;
-    border: 1px solid green;
+    /* border: 1px solid green; */
     width: 60%;
     grid-template-columns: auto auto auto;
     justify-content: space-between;
@@ -407,7 +411,7 @@ body, ul{
     display: flex;
     width: 60%;
     justify-content: space-between;
-    border: 1px solid green;
+    /* border: 1px solid green; */
     align-items: center;
 }
 
@@ -459,28 +463,48 @@ form input{
     border-radius: 15px;
     border: 0;
     padding: 0 20px;
-    color: #ffffff;
-    background-image: linear-gradient(120deg, #d469f5 0%, #8f66ff 50%, #00e0b8 75%);
+    font-weight: 500;
+    font-size: 17px;
+    color: #000000;
+    background-image: linear-gradient(-120deg, #d859ff 0%, #8f66ff 50%, #00e0b8 75%);
     font-family: 'Noto Sans Mono', monospace;
+    transition: 0.5s;
+    
 }
 
 form input:focus{
     border:none;	
     outline:none;
+    background-image: linear-gradient(-120deg, #d859ff 0%, #8f66ff 50%, #00e0b8 75%);
+
 }
 
 form input::placeholder{
     font-family: 'Noto Sans Mono', monospace;
-    color: #d1d1d1;
-    font-weight: 400;
-    font-size: 15px;
+    color: #000000;
+    font-weight: 500;
+    font-size: 17px;
 
 }
 
 .submitBotao{
-    background-color: #00e0b8;
-    background-image: none;
     width: 300px;
+    background-image: none;
+    background: none;
+    box-shadow: 0 0 0 2px #00e0b8;
+    border-radius: 30px;
+    padding: 10px 20px;
+    color: #00e0b8;
+    text-decoration: none;
+    font-weight: 400;
+    text-align: center;
+    margin: 20px 0;
+    transition: 0.5s;
+}
+
+.submitBotao:hover{
+    box-shadow: 0 0 0 4px #00e0b8;
+    background-color: #00e0b715;
 }
 
 
@@ -514,6 +538,7 @@ form input::placeholder{
     align-items: center;
     justify-content: space-between;
     width: 100%;
+    border-top: 1px solid #4d4d4d;
 }
 
 
