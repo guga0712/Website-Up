@@ -151,7 +151,7 @@ body, ul{
 
 .s2Content p{
     width: 50%;
-    color: #c4c4c4;
+    color: #e2e2e2;
     margin-bottom: 20px;
     margin-top: 0;
     font-size: 17px;
@@ -301,7 +301,7 @@ body, ul{
 }
 
 .s6 h2{
-    margin-bottom: -80px;
+    margin-bottom: -50px;
     z-index: 3000;
 }
 
@@ -319,11 +319,13 @@ body, ul{
 
 .s5Content2{
     margin-bottom: 0;
+    gap: 35px;
+    justify-content: center;
 }
 
 .card{
     background-color: #11112b;
-    height: 350px;
+    height: 500px;
     width: 350px;
     border-radius: 30px;
     text-align: center;
@@ -338,18 +340,18 @@ body, ul{
     font-family: 'Montserrat', sans-serif;
     margin: 0 20px;
     position: absolute;
-    top: 45%;
-    font-size: 17px;
+    top: 35%;
+    font-size: 20px;
 }
 
 .card p{
     position: absolute;
-    top: 60%;
+    top: 50%;
     font-family: 'Noto Sans Mono', monospace;
     font-weight: 300;
     width: 250px;
     margin: 0;
-    font-size: 15px;
+    font-size: 17px;
 }
 
 .card img{
@@ -547,7 +549,7 @@ form input::placeholder{
 
 @media (max-width:1800px) {
     .card{
-        height: 300px;
+        height: 400px;
         width: 300px;
     }
 
@@ -575,7 +577,7 @@ form input::placeholder{
     }
 
     .investido2 img, .faturado2 img{
-        width: 400px;
+        width: 350px;
     }
 
     .value{
@@ -612,7 +614,7 @@ form input::placeholder{
     }
 
     .card{
-        height: 250px;
+        height: 350px;
         width: 250px;
     }
 
@@ -621,14 +623,14 @@ form input::placeholder{
     }
 
     .card h1{
-        top: 40%;
+        top: 35%;
         font-size: 15px;
     }
 
     .card p{
         font-size: 13px;
-        top: 65%;
-        width: 240px;
+        top: 55%;
+        width: 230px;
     }
 
     .imgShadow{
@@ -680,7 +682,7 @@ form input::placeholder{
 
     .card{
         margin: 40px 0;
-        height: 400px;
+        height: 500px;
         width: 400px;
     }
 
@@ -853,7 +855,7 @@ form input::placeholder{
     }
 
     .s2Content{
-        margin-top: 150px;
+        margin-top: 180px;
         display: flex;
         flex-direction: column;
         height: auto;
@@ -933,7 +935,7 @@ form input::placeholder{
     
     .card{
         margin: 40px 0;
-        height: 300px;
+        height: 400px;
         width: 300px;
     }
 
@@ -942,12 +944,14 @@ form input::placeholder{
     }
 
     .card h1{
-        top: 45%;
+        top: 40%;
         font-size: 15px;
     }
 
     .card p{
         font-size: 14px;
+        width: 250px;
+        top: 55%;
     }
 
     .imgShadow{
@@ -1026,6 +1030,9 @@ form input::placeholder{
         width: 100%;
     }
 
+    .s6 h2{
+        margin-bottom: 0px;
+    }
 
     .s6Content{
         grid-template-columns: auto auto;
@@ -1054,6 +1061,7 @@ form input::placeholder{
 
     .submitBotao{
         width: 200px;
+        z-index: 300;
     }
 
     .contacts{
